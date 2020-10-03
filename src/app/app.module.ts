@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {NgxChildProcessModule} from 'ngx-childprocess';
+import { TreeTableComponent } from './components/tree-table/tree-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TreeTableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxChildProcessModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
